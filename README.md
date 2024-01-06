@@ -32,8 +32,7 @@ The project is divided into various modules, each serving a specific function:
 To launch the ExplorePaths application, run the following command:
 
 ```bash
-python main.py ./ path/to/start/directory
-# explorer path list
+python main.py path list
 # path: a path browser start to show
 # list: suffix list
 #     none: show all files
