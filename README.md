@@ -1,6 +1,22 @@
-# ExplorePaths
+# cli-python-explore-path (CLI ExplorePaths)
 
-ExplorePaths is a tool for navigating and executing Python files within a specified path. The application provides an interactive user interface for selecting and running Python files and navigating between directories.
+The "File Navigator CLI" project aims to provide developers with a Python library to create a command-line interface (CLI) for navigating the file system. This tool will be useful for simplifying users' interaction with files and directories on the operating system.
+
+### Key Features of the Project
+The project offers the following key features:
+
+File System Navigation: Users can navigate through directories and view files present in the system.
+Detailed File Display: Detailed information about files, such as size, creation date, and permissions, can be obtained.
+Basic File Operations: Basic file operations, including copy, move, and delete, are supported through the interface.
+
+### Technologies Used and Reasons for Choices Made
+The "File Navigator CLI" project utilizes the following technologies:
+
+- **prompt-toolkit**:  It is a Python library for creating command-line user interfaces. It was chosen for its ease of use and numerous features for handling keyboard input.
+
+- **questionary**: This library simplifies the creation of interactive prompts for the user in a CLI. It was selected to make the user interaction with the application more intuitive.
+
+- **wcwidth**: Used to calculate the width of characters in the terminal. This dependency is necessary to ensure that the user interface is properly formatted and visible on a variety of devices and screens.
 
 ## Project Structure
 
@@ -32,8 +48,7 @@ The project is divided into various modules, each serving a specific function:
 To launch the ExplorePaths application, run the following command:
 
 ```bash
-python main.py ./ path/to/start/directory
-# explorer path list
+python main.py path list
 # path: a path browser start to show
 # list: suffix list
 #     none: show all files
